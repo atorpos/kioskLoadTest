@@ -2,3 +2,17 @@ $jmeter = "C:\Users\oskarwong\Applications\apache-jmeter-5.6.3\bin\jmeter.bat"
 Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\getSubr\getSubrData-20rps-10min.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\getSubr\results34.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\getSubr\Report34`""
 
 Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\redeem\redeem-20rps-10min.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\redeem\results36.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\redeem\Report36`""
+
+
+
+
+$jmeter = "C:\Users\oskarwong\Applications\apache-jmeter-5.6.3\bin\jmeter.bat"
+Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\kiosk\kioskTokenEnquireLoadTest.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\kiosk\smoke01.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\kiosk\SmokeReport01`" -Jrps=1 -Jthreads=2 -Jrampup=1 -Jduration=20" -NoNewWindow -Wait
+
+
+
+
+Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\kiosk\kioskTokenEnquireLoadTest.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\kiosk\results01.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\kiosk\Report01`""
+
+
+Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\kiosk\kioskTokenEnquireLoadTest.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\kiosk\results02.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\kiosk\Report02`" -Jduration=600"
