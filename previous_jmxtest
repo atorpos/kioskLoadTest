@@ -1,0 +1,4 @@
+$jmeter = "C:\Users\oskarwong\Applications\apache-jmeter-5.6.3\bin\jmeter.bat"
+Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\getSubr\getSubrData-20rps-10min.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\getSubr\results34.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\getSubr\Report34`""
+
+Start-Process -FilePath $jmeter -ArgumentList "-n -t `"C:\Users\oskarwong\Local\Jmeter\redeem\redeem-20rps-10min.jmx`" -l `"C:\Users\oskarwong\Local\Jmeter\redeem\results36.jtl`" -e -o `"C:\Users\oskarwong\Local\Jmeter\redeem\Report36`""
